@@ -17,6 +17,38 @@
 
 ---
 
+## 🚀 Projetos em Destaque
+
+### 📦 Rossmann Sales Forecast
+Projeto end-to-end de Ciência de Dados para previsão de vendas das lojas Rossmann, utilizando um modelo XGBoost, desde a análise exploratória até o deploy em produção via API.
+
+🔹 Destaques:
+- Regressão em séries temporais  
+- Feature engineering  
+- Modelo XGBoost  
+- API em Flask para inferência em tempo real  
+- Integração com bot no Telegram  
+
+🔗 Repositório:  
+https://github.com/polloncarlos/rossmann_sales_predict
+
+---
+
+### 🏥 Health Insurance Cross-Sell Ranking
+Projeto end-to-end de Machine Learning para ranquear clientes por propensão à compra de seguro veicular, maximizando uplift de negócio com métricas como Gain, Lift e Precision@K.
+
+🔹 Destaques:
+- Classificação binária e ranking  
+- Modelos Random Forest e XGBoost  
+- Métricas: Gain, Lift, Precision@K, NDCG  
+- Estimativa de uplift financeiro  
+- API em Flask + integração com Google Sheets  
+
+🔗 Repositório:  
+https://github.com/polloncarlos/health_insurance_ranking
+
+---
+
 ### 🧠 Tech Stack  
 <p>
   <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
@@ -30,5 +62,3 @@
 </p>
 
 ---
-
-⭐ _"A disciplina constrói o que o entusiasmo inicia."_
