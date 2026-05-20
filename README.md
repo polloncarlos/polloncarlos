@@ -1,64 +1,59 @@
-<!-- Banner / Saudação -->
-# 👋 Olá, eu sou o Carlos Pollon  
-<p>
-  <a href="https://www.linkedin.com/in/carlos-pollon" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:carlos.pollon0015@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</p>
+# Carlos Pollon
 
----
-<p>
-  <img width="49%" height="165px" src="https://github-readme-stats.vercel.app/api?username=polloncarlos&show_icons=true&theme=tokyonight" />
-  <img width="49%" height="165px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=polloncarlos&layout=compact&theme=tokyonight" />
-</p>
+**Data Scientist** — projetos end-to-end com foco em impacto de negócio real.
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-pollon)
+[![Portfolio](https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=github&logoColor=white)](https://polloncarlos.github.io/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:carlos.pollon0015@gmail.com)
 
 ---
 
-## 🚀 Projetos em Destaque
+## Projetos em Destaque
 
-### 📦 Rossmann Sales Forecast
-Projeto end-to-end de Ciência de Dados para previsão de vendas das lojas Rossmann, utilizando um modelo XGBoost, desde a análise exploratória até o deploy em produção via API.
+### 🎯 PA005 — Customer Value Segmentation
+**Clusterização de clientes de e-commerce com deploy em AWS**
 
-🔹 Destaques:
-- Regressão em séries temporais  
-- Feature engineering  
-- Modelo XGBoost  
-- API em Flask para inferência em tempo real  
-- Integração com bot no Telegram  
+Pipeline end-to-end de segmentação não supervisionada: feature engineering com 17 variáveis comportamentais, comparação experimental entre KMeans, GMM, H-Clustering e DBSCAN (com embeddings via Random Forest + UMAP), Silhouette Score de **0.72**, e deploy produtivo em EC2 + RDS PostgreSQL + Metabase.
 
-🔗 Repositório:  
-https://github.com/polloncarlos/rossmann_sales_predict
+**Resultado de negócio:** identificação de 35 clientes VIP (0,8% da base) responsáveis por 24% da receita total, e 1.200 clientes em risco de churn.
+
+🔗 [Repositório](https://github.com/polloncarlos/customer_value_segmentation)
 
 ---
 
-### 🏥 Health Insurance Cross-Sell Ranking
-Projeto end-to-end de Machine Learning para ranquear clientes por propensão à compra de seguro veicular, maximizando uplift de negócio com métricas como Gain, Lift e Precision@K.
+### 📈 PA004 — Health Insurance Cross-Sell Ranking
+**Ranqueamento de clientes por propensão à compra**
 
-🔹 Destaques:
-- Classificação binária e ranking  
-- Modelos Random Forest e XGBoost  
-- Métricas: Gain, Lift, Precision@K, NDCG  
-- Estimativa de uplift financeiro  
-- API em Flask + integração com Google Sheets  
+Solução de Learning to Rank para priorizar clientes com maior probabilidade de contratar seguro veicular. Modelos Random Forest e XGBoost avaliados com Gain@K, Lift@K e NDCG. Estimativa de uplift financeiro e integração com Google Sheets via API em Flask.
 
-🔗 Repositório:  
-https://github.com/polloncarlos/health_insurance_ranking
+🔗 [Repositório](https://github.com/polloncarlos/health_insurance_ranking)
 
 ---
 
-### 🧠 Tech Stack  
-<p>
-  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
-  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Seaborn-9C27B0?style=for-the-badge"/>
-</p>
+### 📦 PA003 — Rossmann Sales Forecast
+**Previsão de vendas end-to-end com deploy via Telegram**
+
+Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Optuna, otimizado para ambiente com restrição de memória (512 MB). Deploy como API Flask com bot no Telegram para consulta de previsões por loja.
+
+🔗 [Repositório](https://github.com/polloncarlos/rossmann_sales_predict)
 
 ---
+
+## 🧠 Tech Stack
+
+| Categoria | Ferramentas |
+|-----------|-------------|
+| **Linguagem** | Python 3.11 |
+| **Machine Learning** | Scikit-learn, XGBoost, UMAP |
+| **Data** | Pandas, NumPy, SQLAlchemy |
+| **Cloud** | AWS EC2, S3, RDS |
+| **Banco de Dados** | PostgreSQL, MySQL |
+| **Dashboards** | Metabase, Streamlit |
+| **Deploy** | Flask, API REST |
+| **Ambiente** | Jupyter Notebook, VSCode |
+
+---
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=polloncarlos&show_icons=true&theme=tokyonight)](https://github.com/polloncarlos)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=polloncarlos&layout=compact&theme=tokyonight)](https://github.com/polloncarlos)
