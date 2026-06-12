@@ -11,6 +11,17 @@
 
 ## Projetos em Destaque
 
+### 🔁 PA006 — Churn Prediction + A/B Testing + Uplift Modeling
+**Pipeline de retenção de 3 camadas com deploy em Streamlit**
+
+Solução end-to-end para um e-commerce B2C de 4.300 clientes: **Camada 1** — XGBoost + Optuna (50 trials) + calibração sigmoid, ROC-AUC 0,776, threshold 0,20 definido pela relação FN/FP de 7×. **Camada 2** — Teste A/B (χ²=6,96, p=0,008), ARR 7,6%, ROI 51,7% por ciclo. **Camada 3** — T-Learner com Logistic Regression; CATE individual por cliente; segmentação em 4 perfis (Persuadible, Sure Thing, Lost Cause, Sleeping Dog).
+
+**Resultado de negócio:** top-200 Persuadibles com CATE médio 0,153 e ROI projetado de 221,5%. Dashboard interativo para time de negócio com download Excel e filtro de budget.
+
+🔗 [Repositório](https://github.com/polloncarlos/churn_ab_uplift_pipeline) · [Dashboard](https://churnabupliftpipeline-s.streamlit.app/)
+
+---
+
 ### 🎯 PA005 — Customer Value Segmentation
 **Clusterização de clientes de e-commerce com deploy em AWS**
 
@@ -45,11 +56,11 @@ Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Op
 | Categoria | Ferramentas |
 |-----------|-------------|
 | **Linguagem** | Python 3.11 |
-| **Machine Learning** | Scikit-learn, XGBoost, UMAP |
+| **Machine Learning** | Scikit-learn, XGBoost, UMAP, Optuna |
 | **Data** | Pandas, NumPy, SQLAlchemy |
 | **Cloud** | AWS EC2, S3, RDS |
 | **Banco de Dados** | PostgreSQL, MySQL |
-| **Dashboards** | Metabase, Streamlit |
+| **Dashboards** | Metabase, Streamlit Cloud |
 | **Deploy** | Flask, API REST |
 | **Ambiente** | Jupyter Notebook, VSCode |
 
