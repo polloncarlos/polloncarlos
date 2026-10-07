@@ -14,9 +14,9 @@
 ### 🔁 PA006 — Churn Prediction + A/B Testing + Uplift Modeling
 **Pipeline de retenção de 3 camadas com deploy em Streamlit**
 
-Solução end-to-end para um e-commerce B2C de 4.300 clientes: **Camada 1** — XGBoost + Optuna (50 trials) + calibração sigmoid, ROC-AUC 0,776, threshold 0,20 definido pela relação FN/FP de 7×. **Camada 2** — Teste A/B (χ²=6,96, p=0,008), ARR 7,6%, ROI 51,7% por ciclo. **Camada 3** — T-Learner com Logistic Regression; CATE individual por cliente; segmentação em 4 perfis (Persuadible, Sure Thing, Lost Cause, Sleeping Dog).
+Solução end-to-end para um e-commerce B2C de 4.300 clientes: **Camada 1** — XGBoost + Optuna (50 trials) + calibração sigmoid, ROC-AUC 0,776, threshold 0,20 definido pela relação FN/FP de 7×. **Camada 2** — Teste A/B sobre campanha simulada (χ²=6,96, p=0,008), validando o desenho do experimento. **Camada 3** — T-Learner com Logistic Regression; CATE individual por cliente; segmentação em 4 perfis (Persuadible, Sure Thing, Lost Cause, Sleeping Dog).
 
-**Resultado de negócio:** top-200 Persuadibles com CATE médio 0,153 e ROI projetado de 221,5%. Dashboard interativo para time de negócio com download Excel e filtro de budget.
+**Resultado:** no cenário simulado, focar nos top-200 de maior uplift estimado elevaria o ROI de 51,7% para 221,5%. Dashboard pensado para o time de CRM, com download Excel e filtro de budget.
 
 🔗 [Repositório](https://github.com/polloncarlos/churn_ab_uplift_pipeline) · [Dashboard](https://churnabupliftpipeline-s.streamlit.app/)
 
@@ -25,7 +25,7 @@ Solução end-to-end para um e-commerce B2C de 4.300 clientes: **Camada 1** — 
 ### 🎯 PA005 — Customer Value Segmentation
 **Clusterização de clientes de e-commerce com deploy em AWS**
 
-Pipeline end-to-end de segmentação não supervisionada: feature engineering com 17 variáveis comportamentais, comparação experimental entre KMeans, GMM, H-Clustering e DBSCAN (com embeddings via Random Forest + UMAP), Silhouette Score de **0.72**, e deploy produtivo em EC2 + RDS PostgreSQL + Metabase.
+Pipeline end-to-end de segmentação não supervisionada: feature engineering com 17 variáveis comportamentais, comparação experimental entre KMeans, GMM, H-Clustering e DBSCAN (embeddings de Random Forest + UMAP testados no experimento; em produção ficou KMeans sobre as variáveis padronizadas, pelo custo no EC2), com deploy em EC2 + S3 + RDS PostgreSQL + Metabase.
 
 **Resultado de negócio:** identificação de 35 clientes VIP (0,8% da base) responsáveis por 24% da receita total, e 1.200 clientes em risco de churn.
 
@@ -45,7 +45,7 @@ Solução de Learning to Rank para priorizar clientes com maior probabilidade de
 ### 📦 PA003 — Rossmann Sales Forecast
 **Previsão de vendas end-to-end com deploy via Telegram**
 
-Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Optuna, otimizado para ambiente com restrição de memória (512 MB). Deploy como API Flask com bot no Telegram para consulta de previsões por loja.
+Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Optuna, otimizado para ambiente com restrição de memória (512 MB). RMSE 912 x 1.120 da primeira versão (−19%). Deploy como API Flask com bot no Telegram para consulta de previsões por loja.
 
 🔗 [Repositório](https://github.com/polloncarlos/rossmann_sales_predict)
 
