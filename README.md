@@ -1,6 +1,6 @@
 # Carlos Pollon
 
-**Data Scientist** — projetos end-to-end com foco em impacto de negócio real.
+**Data Scientist**: projetos end-to-end com foco em decisão de negócio.
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-pollon)
@@ -45,7 +45,7 @@ Solução de Learning to Rank para priorizar clientes com maior probabilidade de
 ### 📦 PA003 — Rossmann Sales Forecast
 **Previsão de vendas end-to-end com deploy via Telegram**
 
-Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Optuna, otimizado para ambiente com restrição de memória (512 MB). RMSE 912 x 1.120 da primeira versão (−19%). Deploy como API Flask com bot no Telegram para consulta de previsões por loja.
+Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Optuna, otimizado para ambiente com restrição de memória (512 MB). RMSE 912 contra 1.835 do baseline pela média (−50%), MAPE 9,2%. Deploy como API Flask com bot no Telegram para consulta de previsões por loja.
 
 🔗 [Repositório](https://github.com/polloncarlos/rossmann_sales_predict)
 
@@ -55,14 +55,15 @@ Modelo XGBoost com seleção de features via Boruta + ExtraTrees e tuning com Op
 
 | Categoria | Ferramentas |
 |-----------|-------------|
-| **Linguagem** | Python 3.11 |
-| **Machine Learning** | Scikit-learn, XGBoost, UMAP, Optuna |
-| **Data** | Pandas, NumPy, SQLAlchemy |
+| **Linguagem** | Python, SQL |
+| **Machine Learning** | Scikit-learn, XGBoost, LightGBM, Optuna, SHAP, UMAP |
+| **Data** | Pandas, NumPy, SQLAlchemy, BigQuery |
 | **Cloud** | AWS EC2, S3, RDS |
 | **Banco de Dados** | PostgreSQL, MySQL |
 | **Dashboards** | Metabase, Streamlit Cloud |
 | **Deploy** | Flask, API REST |
 | **Ambiente** | Jupyter Notebook, VSCode |
+| **Versionamento** | Git |
 
 ---
 
